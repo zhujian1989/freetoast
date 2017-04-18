@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/zhujian/code/toasty/FreeToast/toastlibrary/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3a3852b455ea71c06253fd4785241978172d8dfd">
+        <dex dex="/Users/zhujian/code/toasty/FreeToast/app/build/intermediates/pre-dexed/debug/classes_cbc321a3acf5fc0a0072aa6cecd06fddd5c65356.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhujian/.android/build-cache/b251b47a29df84609b3bf6dcc1284bf79962a020/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/zhujian/code/toasty/FreeToast/app/build/intermediates/pre-dexed/debug/classes_74ed2b3b792f067430ecd38c2aab6654c45ef7fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zhujian/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/zhujian/code/toasty/FreeToast/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_4e57a4a0500a4a7c5e3b443ad8877938767c05ef.jar" />
+    </item>
+
+</items>

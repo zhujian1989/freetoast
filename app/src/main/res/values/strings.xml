@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FreeToast</string>
+
+    <string name="btn1">普通toast</string>
+    <string name="btn2">自定义字体背景toast</string>
+    <string name="btn3">带图toast(上下左右)</string>
+    <string name="btn4">全属性toast</string>
+
+
+</resources>
