@@ -31,13 +31,13 @@ dependencies {
 `FreeToast.toastShort(this,msg).show();
 `  
 
-2.  修改文字大小颜色以及字体 
+2.  修改文字大小颜色以及   
 ` FreeToast.toastWithOutIcon(this,msg,Toast.LENGTH_SHORT,textSize,textColor,tintColor,typeface).show();
 `   
-3.  文字带icon 
+3.  文字带icon   
 ` FreeToast.toastWithIcon(this, msg, Toast.LENGTH_SHORT, drawable, FreeToastUtils.DRAWABLE_LEFT).show();
 `   
-4.  全属性自定义 
+4.  全属性自定义   
 ` FreeToast.toastAllAttr(this, msg, Toast.LENGTH_SHORT, drawable, FreeToastUtils.DRAWABLE_TOP,textSize,textColor,tintColor,typeface).show();
 `   
 ## License
