@@ -12,6 +12,20 @@
 <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/3.png" width="200">
 <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/4.png" width="200"><img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/5.png" width="200">
 
+##版本1.0.0   
+```
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://dl.bintray.com/zhujian19890805/maven' }
+    }
+}    
+  
+dependencies {
+    compile 'com.jzhu.io.toastlibrary:toastlibrary:1.0.0'
+}
+```    
+
 ## 基本用法
 1.  普通toast  
 `FreeToast.toastShort(this,msg).show();
