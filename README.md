@@ -14,16 +14,10 @@
 
 ## 版本1.0.0   
 ```
-allprojects {
-    repositories {
-        jcenter()
-        maven { url 'https://dl.bintray.com/zhujian19890805/maven' }
-    }
-}    
-  
 dependencies {
     compile 'com.jzhu.io.toastlibrary:toastlibrary:1.0.0'
-}
+}  
+
 ```    
 
 ## 基本用法
