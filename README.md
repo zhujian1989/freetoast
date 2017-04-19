@@ -34,17 +34,17 @@ FreeToast.toastShort(this,msg).show();
 FreeToast.toastLong(this,msg).show();
 
 ```  
-修改文字大小颜色以及   
+修改文字大小颜色以及字体   
 
 ```
 FreeToast.toastWithOutIcon(this,
-				msg,
-				Toast.LENGTH_SHORT,
-				textSize,
-				textColor,
-				tintColor,
-				typeface)
-				.show();
+			msg,
+			Toast.LENGTH_SHORT,
+			textSize,
+			textColor,
+			tintColor,
+			typeface)
+			.show();
 ```  
 
 文字带icon    
