@@ -38,24 +38,24 @@ FreeToast.toastLong(this,msg).show();
 
 ```
 FreeToast.toastWithOutIcon(this,
-			msg,
-			Toast.LENGTH_SHORT,
-			textSize,
-			textColor,
-			tintColor,
-			typeface)
-			.show();
+				msg,
+				Toast.LENGTH_SHORT,
+				textSize,
+				textColor,
+				tintColor,
+				typeface)
+				.show();
 ```  
 
 文字带icon    
 
 ```
-  FreeToast.toastWithIcon(this, 
-  								msg, 
-  								Toast.LENGTH_SHORT, 
-  								drawable, 
- 								FreeToastUtils.DRAWABLE_LEFT)
-  								.show();
+FreeToast.toastWithIcon(this, 
+  					msg, 
+  					Toast.LENGTH_SHORT, 
+  					drawable, 
+  					FreeToastUtils.DRAWABLE_LEFT)
+  					.show();
 
 ``` 
 全属性自定义     
@@ -63,15 +63,15 @@ FreeToast.toastWithOutIcon(this,
 
 ```
 FreeToast.toastAllAttr(this,
- 							msg, 
- 							Toast.LENGTH_SHORT, 
-							drawable, 
-							FreeToastUtils.DRAWABLE_TOP,
-							textSize,
-							textColor,
- 							tintColor,
- 							typeface)
- 							.show();
+				msg, 
+				Toast.LENGTH_SHORT, 
+				drawable, 
+				FreeToastUtils.DRAWABLE_TOP,
+				textSize,
+				textColor,
+				tintColor,
+				typeface)
+				.show();
 ```  
 
 ## License
