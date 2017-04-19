@@ -12,7 +12,7 @@
 <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/3.png" width="200">
 <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/4.png" width="200"><img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/5.png" width="200">
 
-##版本1.0.0   
+## 版本1.0.0   
 ```
 allprojects {
     repositories {
