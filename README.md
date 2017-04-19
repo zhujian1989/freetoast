@@ -51,11 +51,11 @@ FreeToast.toastWithOutIcon(this,
 
 ```
 FreeToast.toastWithIcon(this, 
-  					msg, 
-  					Toast.LENGTH_SHORT, 
-  					drawable, 
-  					FreeToastUtils.DRAWABLE_LEFT)
-  					.show();
+  			msg, 
+  			Toast.LENGTH_SHORT, 
+  			drawable, 
+  			FreeToastUtils.DRAWABLE_LEFT)
+  			.show();
 
 ``` 
 全属性自定义     
@@ -63,15 +63,15 @@ FreeToast.toastWithIcon(this,
 
 ```
 FreeToast.toastAllAttr(this,
-				msg, 
-				Toast.LENGTH_SHORT, 
-				drawable, 
-				FreeToastUtils.DRAWABLE_TOP,
-				textSize,
-				textColor,
-				tintColor,
-				typeface)
-				.show();
+			msg, 
+			Toast.LENGTH_SHORT, 
+			drawable, 
+			FreeToastUtils.DRAWABLE_TOP,
+			textSize,
+			textColor,
+			tintColor,
+			typeface)
+			.show();
 ```  
 
 ## License
