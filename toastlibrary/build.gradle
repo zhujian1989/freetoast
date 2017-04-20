@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
@@ -28,4 +30,16 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
+
+    compile 'com.android.support:appcompat-v7:25.3.1'
+}
+
+
+publish {
+    userOrg = 'zhujian19890805'                             //bintray用户账号
+    groupId = 'com.jzhu.io.toastlibrary'                    //library的唯一id，用包名即可
+    artifactId = 'toastlibrary'                             //仓库名，最后生成的可依赖：compile 'com.jzhu.io.toastlibrary:toastlibrary:1.0.0'
+    version = '1.0.0'                                       //版本号
+    description = 'custom toast'                            //描述
+    website = "https://github.com/zhujian1989/freetoast"    //github地址或
 }
