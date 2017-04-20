@@ -43,3 +43,6 @@ publish {
     description = 'custom toast'                            //描述
     website = "https://github.com/zhujian1989/freetoast"    //github地址或
 }
+
+//./gradlew clean build bintrayUpload -PbintrayUser= -PbintrayKey= -PdryRun=false
+
