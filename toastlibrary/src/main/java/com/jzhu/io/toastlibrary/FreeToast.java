@@ -6,8 +6,11 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.lang.reflect.Field;
 
 /**
  * Created by zhujian on 2017/4/17.
@@ -17,14 +20,14 @@ public class FreeToast {
 
     public static Toast toastLong(Context context,
                                   CharSequence message) {
-        return create(context, message, Toast.LENGTH_LONG, null, 0, 0, 0, 0, null);
+        return create(context, message, Toast.LENGTH_LONG, null, 0, 0, 0, 0, null, 0);
     }
 
     ;
 
     public static Toast toastShort(Context context,
                                    CharSequence message) {
-        return create(context, message, Toast.LENGTH_SHORT, null, 0, 0, 0, 0, null);
+        return create(context, message, Toast.LENGTH_SHORT, null, 0, 0, 0, 0, null, 0);
     }
 
     ;
@@ -35,7 +38,7 @@ public class FreeToast {
                                       Drawable icon,
                                       int DrawableDirection
     ) {
-        return create(context, message, duration, icon, DrawableDirection, 0, 0, 0, null);
+        return create(context, message, duration, icon, DrawableDirection, 0, 0, 0, null, 0);
     }
 
     ;
@@ -47,7 +50,7 @@ public class FreeToast {
                                          int textColor,
                                          int tintColor,
                                          Typeface typeface) {
-        return create(context, message, duration, null, 0, textSize, textColor, tintColor, typeface);
+        return create(context, message, duration, null, 0, textSize, textColor, tintColor, typeface, 0);
     }
 
     ;
@@ -60,8 +63,8 @@ public class FreeToast {
                                      int textSize,
                                      int textColor,
                                      int tintColor,
-                                     Typeface typeface) {
-        return create(context, message, duration, icon, drawableDirection, textSize, textColor, tintColor, typeface);
+                                     Typeface typeface, int animationsId) {
+        return create(context, message, duration, icon, drawableDirection, textSize, textColor, tintColor, typeface, animationsId);
     }
 
     ;
@@ -74,7 +77,7 @@ public class FreeToast {
                                int textSize,
                                int textColor,
                                int tintColor,
-                               Typeface typeface) {
+                               Typeface typeface, int animationsId) {
 
         final Toast toast = new Toast(context);
         final View toastLayout = ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE))
@@ -110,9 +113,50 @@ public class FreeToast {
         if (null != typeface) {
             toastTextView.setTypeface(typeface);
         }
+
         toast.setView(toastLayout);
         toast.setDuration(duration);
+
+        if (0 != animationsId) {
+            initAnimation(toast, animationsId);
+        }
+
         return toast;
+    }
+
+    public static void initAnimation(Toast toast, int animationsId) {
+        try {
+
+            Object mTN;
+            mTN = getField(toast, "mTN");
+            if (mTN != null) {
+                Object mParams = getField(mTN, "mParams");
+                if (mParams != null
+                    && mParams instanceof WindowManager.LayoutParams) {
+                    WindowManager.LayoutParams params = (WindowManager.LayoutParams) mParams;
+                    params.windowAnimations = animationsId;
+                }
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 反射字段
+     *
+     * @param object    要反射的对象
+     * @param fieldName 要反射的字段名称
+     */
+    private static Object getField(Object object, String fieldName)
+            throws NoSuchFieldException, IllegalAccessException {
+        Field field = object.getClass().getDeclaredField(fieldName);
+        if (field != null) {
+            field.setAccessible(true);
+            return field.get(object);
+        }
+        return null;
     }
 
 }

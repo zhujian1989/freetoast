@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 FreeToast.toastWithIcon(this, res.getString(R.string.btn3), Toast.LENGTH_SHORT, drawable, FreeToastUtils.DRAWABLE_LEFT).show();
                 break;
             case R.id.btn4:
-                FreeToast.toastAllAttr(this, res.getString(R.string.btn4), Toast.LENGTH_SHORT, drawable, FreeToastUtils.DRAWABLE_TOP,textSize,textColor,tintColor,typeface).show();
+                FreeToast.toastAllAttr(this, res.getString(R.string.btn4), Toast.LENGTH_SHORT, drawable, FreeToastUtils.DRAWABLE_TOP,textSize,textColor,tintColor,typeface,R.style.Lite_Animation_Toast).show();
                 break;
         }
     }
