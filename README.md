@@ -7,15 +7,16 @@
 3.  修改文字大小，颜色    
 4.  支持自定义字体    
 5.  支持上下左右显示icon    
-6.  待续
+6.  支持自定义动画  
+7.  待续
 
 <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/3.png" width="200">
 <img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/4.png" width="200"><img src="https://github.com/zhujian1989/freetoast/blob/master/screenshot/5.png" width="200">
 
-## 版本1.0.0   
+## 版本1.0.1   
 ```
 dependencies {
-    compile 'com.jzhu.io.toastlibrary:toastlibrary:1.0.0'
+    compile 'com.jzhu.io.toastlibrary:toastlibrary:1.0.1'
 }  
 
 ```    
@@ -64,7 +65,9 @@ FreeToast.toastAllAttr(this,
 			textSize,
 			textColor,
 			tintColor,
-			typeface)
+			typeface,
+			animationsId
+			)
 			.show();
 ```  
 
